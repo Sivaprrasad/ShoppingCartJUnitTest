@@ -61,10 +61,26 @@ public class ShoppingCartTest {
 		//E1: When a new product is added, 
 				//the number of items must be incremented  
 		
+		
 		//E2: When a new product is added, 
 				//the new balance must be the sum of the previous balance 
 				//plus the cost of the new product  
 
+		/** ITERATION 2 - OF THE TEST CASE
+		 * *@TODO: NOTE: MUST CHECK BALANCE BEFORE HAND 
+		 * *@TODO: NOTE: CHECK THE NUMBER OF ITEMS BEFORE?
+		 * 1. MAKE A SHOPPING CART
+		 * 2. MAKE A PRODUCT(X 2!)
+		 * 3. CHECK BALANCE IN THE CART BEFORE ADDING PRODUCT - PREV BAL
+		 * 4. CHECK NUM ITEMS IN CART BEFORE ADDING PRODUCT
+		 * 5. ADD THE PRODUCT TO THE CART
+		 * 6. CHECK THE NUMBER OF ITEM IN THE CART
+		 * 			--EO: NUM ITEMS +1
+		 * ----------------------------------------------
+		 * 7. CHECK THE UPDATED BALANCE OF THE CART
+		 * 		--EO: PREVIOUS BALANCE + PRICE OF PRODUCT
+		 * 
+		 */
 	}
 
 }
