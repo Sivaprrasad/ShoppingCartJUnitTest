@@ -12,10 +12,21 @@ public class ShoppingCartTest {
 	//6.look at the results
 	
 	ShoppingCart cart;
+	Product phone;
 	
 	public void setUp() throws Exception{
 		//1. Make a new cart object that all test cases can use.
 		cart = new ShoppingCart();
+		
+		//2. Make a new product object that all test cases can use.
+		phone = new Product("iPhone", 1500);
+	
+		// ----------------SOURCE FROM JENELLE  BITBUCKET.
+		//You can also put repeated "setup tests" in here, like this:
+					// Recall that many of our test cases start by confirming that the 
+					// 		num items in a brand new cart = 0
+					// assertEquals(0,cart.getItemCount());
+		//-----------------
 		
 	}
 
@@ -48,8 +59,8 @@ public class ShoppingCartTest {
 		//1. Make a new cart - Done in setUp() function.
 		//ShoppingCart cart = new ShoppingCart();
 		
-		//2. Add item to the cart
-		Product phone = new Product("iPhone", 1500);
+		//2. Add item to the cart - done in setUp() function
+		//Product phone = new Product("iPhone", 1500);
 		Product hamburger = new Product("burger", 10);
 		
 		cart.addItem(phone);
@@ -83,8 +94,8 @@ public class ShoppingCartTest {
 		 // 1. MAKE A SHOPPING CART - - Done in setUp() function
 		//ShoppingCart cart = new ShoppingCart();
 				
-		 //* 2. MAKE A PRODUCT(X 2!)
-		Product phone = new Product("iPhone", 1500);
+		 //* 2. MAKE A PRODUCT(X 2!) -- done in settUp() function
+		//Product phone = new Product("iPhone", 1500);
 		
 		 //* 3. CHECK BALANCE IN THE CART BEFORE ADDING PRODUCT - PREV BAL
 		double startBalance = cart.getBalance();
