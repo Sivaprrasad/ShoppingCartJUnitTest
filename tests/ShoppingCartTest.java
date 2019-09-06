@@ -81,6 +81,9 @@ public class ShoppingCartTest {
 		
 		
 		 //* 4. CHECK NUM ITEMS IN CART BEFORE ADDING PRODUCT
+		int numItems = cart.getItemCount();
+		assertEquals(0, numItems);
+		
 		
 		 //* 5. ADD THE PRODUCT TO THE CART
 		 //* 6. CHECK THE NUMBER OF ITEM IN THE CART
