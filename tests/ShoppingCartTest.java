@@ -93,9 +93,16 @@ public class ShoppingCartTest {
 		assertEquals(startingNumItems + 1, cart.getItemCount());
 		//Okay, but not very usable (ok but not ok)
 			//assertEquals(1, cart.getItemCount());
+		
 		 //* ----------------------------------------------
 		 //* 7. CHECK THE UPDATED BALANCE OF THE CART
 		 //* 		--EO: PREVIOUS BALANCE + PRICE OF PRODUCT
+		
+		double expectedBalance = startBalance + phone.getPrice();
+		assertEquals(expectedBalance, cart.getBalance(), 0.01);
+		
+		
+		
 		 
 	}
 
