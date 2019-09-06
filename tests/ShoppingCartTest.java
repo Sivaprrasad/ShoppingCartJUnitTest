@@ -81,13 +81,18 @@ public class ShoppingCartTest {
 		
 		
 		 //* 4. CHECK NUM ITEMS IN CART BEFORE ADDING PRODUCT
-		int numItems = cart.getItemCount();
-		assertEquals(0, numItems);
+		int startingNumItems = cart.getItemCount();
+		assertEquals(0, startingNumItems);
 		
 		
 		 //* 5. ADD THE PRODUCT TO THE CART
+		cart.addItem(phone);
+		
 		 //* 6. CHECK THE NUMBER OF ITEM IN THE CART
-		 //* 			--EO: NUM ITEMS +1
+		 //* 			--EO: PREV NUM ITEMS +1
+		assertEquals(startingNumItems + 1, cart.getItemCount());
+		//Okay, but not very usable (ok but not ok)
+			//assertEquals(1, cart.getItemCount());
 		 //* ----------------------------------------------
 		 //* 7. CHECK THE UPDATED BALANCE OF THE CART
 		 //* 		--EO: PREVIOUS BALANCE + PRICE OF PRODUCT
