@@ -10,6 +10,14 @@ public class ShoppingCartTest {
 	//4.Call assertEquals() in your test case
 	//5.Run the program
 	//6.look at the results
+	
+	ShoppingCart cart;
+	
+	public void setUp() throws Exception{
+		//1. Make a new cart object that all test cases can use.
+		cart = new ShoppingCart();
+		
+	}
 
 	@Test
 	public void testCreateCart() {
@@ -22,8 +30,9 @@ public class ShoppingCartTest {
 		//fail("Not yet implemented");
 		//****************************
 		
-		//1. Make a new cart.
-		ShoppingCart cart = new ShoppingCart();
+		//1. Make a new cart - Done in setUp() function
+		 		
+		//ShoppingCart cart = new ShoppingCart();
 		
 		//2. Check number of items in the cart
 		int a = cart.getItemCount();
@@ -36,8 +45,8 @@ public class ShoppingCartTest {
 	@Test
 	public void testEmptyTheCart() {
 		
-		//1. Make a new cart.
-		ShoppingCart cart = new ShoppingCart();
+		//1. Make a new cart - Done in setUp() function.
+		//ShoppingCart cart = new ShoppingCart();
 		
 		//2. Add item to the cart
 		Product phone = new Product("iPhone", 1500);
@@ -69,8 +78,10 @@ public class ShoppingCartTest {
 		// ITERATION 2 - OF THE TEST CASE
 		 //* *@TODO: NOTE: MUST CHECK BALANCE BEFORE HAND 
 		 //* *@TODO: NOTE: CHECK THE NUMBER OF ITEMS BEFORE?
-		 // 1. MAKE A SHOPPING CART
-		ShoppingCart cart = new ShoppingCart();
+		
+		
+		 // 1. MAKE A SHOPPING CART - - Done in setUp() function
+		//ShoppingCart cart = new ShoppingCart();
 				
 		 //* 2. MAKE A PRODUCT(X 2!)
 		Product phone = new Product("iPhone", 1500);
@@ -102,8 +113,7 @@ public class ShoppingCartTest {
 		assertEquals(expectedBalance, cart.getBalance(), 0.01);
 		
 		
-		
-		 
 	}
 
+	
 }
